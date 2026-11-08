@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Focus Ghost",
+    "slug": "focus-ghost",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.focusghost.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.focusghost.app",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ],
+      "blockedPermissions": [
+        "BIND_ACCESSIBILITY_SERVICE",
+        "SCHEDULE_EXACT_ALARM",
+        "SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#8b5cf6"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "focus-ghost-play-prod"
+      }
+    }
+  }
+}
